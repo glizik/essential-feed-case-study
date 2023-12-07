@@ -49,7 +49,7 @@ class EssentialFeedAPIEndtoEndTests: XCTestCase {
     }
     
     private func id(at index: Int) -> UUID {
-        return UUID(uuidString: [
+        UUID(uuidString: [
             "73A7F70C-75DA-4C2E-B5A3-EED40DC53AA6",
             "BA298A85-6275-48D3-8315-9C8F7C1CD109",
             "5A0D45B3-8E26-4385-8C5D-213E160A5E3C",
