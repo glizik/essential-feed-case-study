@@ -171,7 +171,6 @@ class CacheFeedUseCaseTests: XCTestCase {
         }
     }
 
-    
     private func uniqueItem() -> FeedItem {
         return FeedItem(id: UUID(), description: "any", location: "any", imageURL: anyURL())
     }
