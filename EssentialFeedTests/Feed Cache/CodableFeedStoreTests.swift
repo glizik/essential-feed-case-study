@@ -185,8 +185,9 @@ class CodableFeedStoreTests: XCTestCase {
         let sut = makeSUT()
         insert((uniqueImageFeed().local, Date()), to: sut)
 
-        deleteCache(from: sut)
+        let deletionError = deleteCache(from: sut)
 
+        XCTAssertNil(deletionError, "Expected non-empty cache deletion to succeed")
         expect(sut, toRetrieve: .empty)
     }
 
