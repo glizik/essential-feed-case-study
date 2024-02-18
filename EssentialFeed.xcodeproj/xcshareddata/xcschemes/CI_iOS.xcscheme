@@ -35,6 +35,12 @@
          <TestPlanReference
             reference = "container:EssentialFeedCacheIntegrationTests.xctestplan">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:EssentialFeedAPIEndtoEndTests.xctestplan">
+         </TestPlanReference>
+         <TestPlanReference
+            reference = "container:EssentialFeediOS.xctestplan">
+         </TestPlanReference>
       </TestPlans>
    </TestAction>
    <LaunchAction
