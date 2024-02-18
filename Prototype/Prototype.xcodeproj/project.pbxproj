@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F13D225E2B82A6D7002AE390 /* FeedImageViewModel+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13D225D2B82A6D7002AE390 /* FeedImageViewModel+PrototypeData.swift */; };
+		F13D22602B82A890002AE390 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13D225F2B82A890002AE390 /* FeedImageCell.swift */; };
 		F1CF89272B55823300647745 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF89262B55823300647745 /* AppDelegate.swift */; };
 		F1CF89292B55823300647745 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF89282B55823300647745 /* SceneDelegate.swift */; };
 		F1CF892E2B55823300647745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CF892C2B55823300647745 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		F13D225D2B82A6D7002AE390 /* FeedImageViewModel+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageViewModel+PrototypeData.swift"; sourceTree = "<group>"; };
+		F13D225F2B82A890002AE390 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 		F1CF89232B55823300647745 /* Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CF89262B55823300647745 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1CF89282B55823300647745 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				F1CF89262B55823300647745 /* AppDelegate.swift */,
 				F1CF89282B55823300647745 /* SceneDelegate.swift */,
 				F1CF892C2B55823300647745 /* Main.storyboard */,
+				F13D225F2B82A890002AE390 /* FeedImageCell.swift */,
 				F1CF893A2B5591BE00647745 /* FeedViewController.swift */,
 				F13D225D2B82A6D7002AE390 /* FeedImageViewModel+PrototypeData.swift */,
 				F1CF892F2B55823500647745 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 				F1CF893B2B5591BE00647745 /* FeedViewController.swift in Sources */,
 				F1CF89292B55823300647745 /* SceneDelegate.swift in Sources */,
 				F13D225E2B82A6D7002AE390 /* FeedImageViewModel+PrototypeData.swift in Sources */,
+				F13D22602B82A890002AE390 /* FeedImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
