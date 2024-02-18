@@ -42,8 +42,8 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVF-f5-tTZ" userLabel="Pin Container">
                                                             <rect key="frame" x="0.0" y="0.0" width="20" height="36"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="y5L-3M-L2V">
-                                                                    <rect key="frame" x="0.0" y="4.6666666666666643" width="19.666666666666668" height="21.333333333333336"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="y5L-3M-L2V">
+                                                                    <rect key="frame" x="0.0" y="5" width="10" height="20"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="B0V-Wz-GsN"/>
                                                                     </constraints>
@@ -152,7 +152,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pin" catalog="system" width="116" height="128"/>
+        <image name="pin" width="10" height="14.333333015441895"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
