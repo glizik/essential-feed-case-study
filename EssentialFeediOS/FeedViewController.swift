@@ -97,6 +97,10 @@ final public class FeedViewController: UITableViewController, UITableViewDataSou
         cancelTask(forRowAt: indexPath)
     }
     
+//    public override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        startTask(forRowAt: indexPath)
+//    }
+    
     // MARK: UITableViewDataSourcePrefetching
     
     public func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
