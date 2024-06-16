@@ -10,7 +10,7 @@ import UIKit
 import EssentialFeed
 
 final public class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching {
-    private var refreshController: FeedRefreshViewController?
+    public var refreshController: FeedRefreshViewController?
     private var imageLoader: FeedImageDataLoader?
     private var onViewIsAppearing: ((FeedViewController) -> Void)?
     private var tableModel = [FeedImage]() {
