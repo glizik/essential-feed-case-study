@@ -136,6 +136,7 @@
                         <connections>
                             <outlet property="dataSource" destination="yhT-2K-6Ub" id="zdd-FQ-f86"/>
                             <outlet property="delegate" destination="yhT-2K-6Ub" id="eDF-QY-VHr"/>
+                            <outlet property="prefetchDataSource" destination="yhT-2K-6Ub" id="akB-0B-dte"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Feed" id="gxs-a8-YjE"/>
