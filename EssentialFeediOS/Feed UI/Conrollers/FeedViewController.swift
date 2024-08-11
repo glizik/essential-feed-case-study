@@ -5,17 +5,24 @@
 //  Created by Gabor L Lizik on 12/06/2024.
 //
 
-import Foundation
 import UIKit
+import EssentialFeed
 
 protocol FeedViewControllerDelegate {
     func didRequestFeedRefresh()
 }
 
-final public class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching, FeedLoadingView {
+final public class FeedViewController: 
+    UITableViewController,
+    UITableViewDataSourcePrefetching,
+    FeedLoadingView,
+    FeedErrorView {
+    @IBOutlet private(set) public var errorView: ErrorView!
+    
     var delegate: FeedViewControllerDelegate?
-
+    
     private var onViewIsAppearing: ((FeedViewController) -> Void)?
+    
     var tableModel = [FeedImageCellController]() {
         didSet { tableView.reloadData() }
     }
@@ -28,10 +35,10 @@ final public class FeedViewController: UITableViewController, UITableViewDataSou
             vc.onViewIsAppearing = nil
         }
     }
-
+    
     public override func viewIsAppearing(_ animated: Bool) {
         super.viewIsAppearing(animated)
-
+        
         onViewIsAppearing?(self)
     }
     
@@ -39,11 +46,22 @@ final public class FeedViewController: UITableViewController, UITableViewDataSou
         delegate?.didRequestFeedRefresh()
     }
     
-    func display(_ viewModel: FeedLoadingViewModel) {
+    public func display(_ viewModel: FeedLoadingViewModel) {
         if viewModel.isLoading {
             refreshControl?.beginRefreshing()
         } else {
             refreshControl?.endRefreshing()
+        }
+    }
+    
+    
+    
+    
+    public func display(_ viewModel: FeedErrorViewModel) {
+        if let message = viewModel.message {
+            errorView.show(message: message)
+        } else {
+            errorView.hideMessage()
         }
     }
     
