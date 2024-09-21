@@ -189,6 +189,7 @@
 		5FA5F51A2C9EE84F007FEA16 /* FeedImageDataStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStoreSpy.swift; sourceTree = "<group>"; };
 		5FA5F51C2C9EEA59007FEA16 /* CacheFeedImageDataUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedImageDataUseCaseTests.swift; sourceTree = "<group>"; };
 		5FA5F51E2C9EF884007FEA16 /* CoreDataFeedImageDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedImageDataStoreTests.swift; sourceTree = "<group>"; };
+		5FA5F5202C9F031A007FEA16 /* FeedStore 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FeedStore 2.xcdatamodel"; sourceTree = "<group>"; };
 		5FBC52052B220A1B00C1ED1D /* CITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CITestPlan.xctestplan; sourceTree = "<group>"; };
 		5FD072BE2C50CD9E006B5162 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		5FD072C02C50CE4B006B5162 /* Feed.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Feed.xcassets; sourceTree = "<group>"; };
@@ -1494,9 +1495,10 @@
 		F1F44B092B45CFE7005BD43D /* FeedStore.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				5FA5F5202C9F031A007FEA16 /* FeedStore 2.xcdatamodel */,
 				F1F44B0A2B45CFE7005BD43D /* FeedStore.xcdatamodel */,
 			);
-			currentVersion = F1F44B0A2B45CFE7005BD43D /* FeedStore.xcdatamodel */;
+			currentVersion = 5FA5F5202C9F031A007FEA16 /* FeedStore 2.xcdatamodel */;
 			path = FeedStore.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
