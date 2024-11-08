@@ -144,9 +144,17 @@
 			isa = PBXGroup;
 			children = (
 				5F32B1902CDE542B00F60D43 /* FeedLoaderWithFallbackCompositeTests.swift */,
-				5FB33A8A2CDE69CF0014D9AE /* XCTestCase+MemoryLeakTracking.swift */,
+				5FB33A8C2CDE6AB50014D9AE /* Helpers */,
 			);
 			path = EssentialAppTests;
+			sourceTree = "<group>";
+		};
+		5FB33A8C2CDE6AB50014D9AE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5FB33A8A2CDE69CF0014D9AE /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
