@@ -21,6 +21,7 @@
 		5FB33A872CDE68550014D9AE /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB33A862CDE68550014D9AE /* EssentialFeed.framework */; };
 		5FB33A882CDE68550014D9AE /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB33A862CDE68550014D9AE /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5FB33A8B2CDE69CF0014D9AE /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB33A8A2CDE69CF0014D9AE /* XCTestCase+MemoryLeakTracking.swift */; };
+		5FB33A8E2CDE77B30014D9AE /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB33A8D2CDE77B30014D9AE /* SharedTestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		5F751B662CBD601C00CD63BA /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB33A862CDE68550014D9AE /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB33A8A2CDE69CF0014D9AE /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		5FB33A8D2CDE77B30014D9AE /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				5FB33A8A2CDE69CF0014D9AE /* XCTestCase+MemoryLeakTracking.swift */,
+				5FB33A8D2CDE77B30014D9AE /* SharedTestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				5F32B1912CDE542B00F60D43 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
 				5FB33A8B2CDE69CF0014D9AE /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				5FB33A8E2CDE77B30014D9AE /* SharedTestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
