@@ -26,7 +26,6 @@ public class FeedLoaderWithFallbackComposite: FeedLoader {
             case .failure:
                 self?.fallback.load(completion: completion)
             }
-            
         }
     }
 }
