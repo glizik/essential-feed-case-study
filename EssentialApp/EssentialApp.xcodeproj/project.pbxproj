@@ -28,6 +28,7 @@
 		5FB33A962CE34CD80014D9AE /* FeedLoaderCacheDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB33A952CE34CD80014D9AE /* FeedLoaderCacheDecoratorTests.swift */; };
 		5FB33A982CE3594F0014D9AE /* FeedLoaderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB33A972CE3594F0014D9AE /* FeedLoaderStub.swift */; };
 		5FB33A9A2CE35AF80014D9AE /* XCTestCase+FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB33A992CE35AF80014D9AE /* XCTestCase+FeedLoader.swift */; };
+		5FB33A9E2CE369AB0014D9AE /* FeedLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB33A9D2CE369AB0014D9AE /* FeedLoaderCacheDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		5FB33A952CE34CD80014D9AE /* FeedLoaderCacheDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderCacheDecoratorTests.swift; sourceTree = "<group>"; };
 		5FB33A972CE3594F0014D9AE /* FeedLoaderStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderStub.swift; sourceTree = "<group>"; };
 		5FB33A992CE35AF80014D9AE /* XCTestCase+FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedLoader.swift"; sourceTree = "<group>"; };
+		5FB33A9D2CE369AB0014D9AE /* FeedLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderCacheDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				5F751B612CBD601C00CD63BA /* Info.plist */,
 				5FB33A8F2CDE7CDA0014D9AE /* FeedLoaderWithFallbackComposite.swift */,
 				5FB33A932CE33A100014D9AE /* FeedImageDataLoaderWithFallbackComposite.swift */,
+				5FB33A9D2CE369AB0014D9AE /* FeedLoaderCacheDecorator.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				5F751B582CBD601A00CD63BA /* ViewController.swift in Sources */,
 				5F751B542CBD601A00CD63BA /* AppDelegate.swift in Sources */,
 				5FB33A902CDE7CDA0014D9AE /* FeedLoaderWithFallbackComposite.swift in Sources */,
+				5FB33A9E2CE369AB0014D9AE /* FeedLoaderCacheDecorator.swift in Sources */,
 				5F751B562CBD601A00CD63BA /* SceneDelegate.swift in Sources */,
 				5FB33A942CE33A100014D9AE /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */,
 			);
