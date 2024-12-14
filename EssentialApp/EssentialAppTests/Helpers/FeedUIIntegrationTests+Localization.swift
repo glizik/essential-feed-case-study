@@ -1,5 +1,5 @@
 //
-//  FeedViewControllerTests+Localization.swift
+//  FeedUIIntegrationTests+Localization.swift
 //  EssentialFeediOSTests
 //
 //  Created by Gabor L Lizik on 30/07/2024.
