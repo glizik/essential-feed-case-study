@@ -42,6 +42,12 @@ final public class FeedViewController:
         onViewIsAppearing?(self)
     }
     
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        tableView.sizeTableHeaderToFit()
+    }
+    
     @IBAction private func refresh() {
         delegate?.didRequestFeedRefresh()
     }
@@ -57,9 +63,6 @@ final public class FeedViewController:
             refreshControl?.endRefreshing()
         }
     }
-    
-    
-    
     
     public func display(_ viewModel: FeedErrorViewModel) {
         if let message = viewModel.message {

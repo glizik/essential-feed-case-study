@@ -19,28 +19,22 @@
                             <rect key="frame" x="0.0" y="0.0" width="393" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIP-jJ-eq3">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="34"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9G-I0-fq4">
+                                    <rect key="frame" x="5" y="5" width="383" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <inset key="contentEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="hideMessage" destination="Jn3-YL-xNQ" eventType="touchUpInside" id="pwh-x5-0F6"/>
-                                    </connections>
-                                </button>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" systemColor="systemRedColor"/>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="MIP-jJ-eq3" secondAttribute="bottom" id="8Hz-o3-p6E"/>
-                                <constraint firstAttribute="trailing" secondItem="MIP-jJ-eq3" secondAttribute="trailing" id="Gyz-oH-3G7"/>
-                                <constraint firstItem="MIP-jJ-eq3" firstAttribute="leading" secondItem="Jn3-YL-xNQ" secondAttribute="leading" id="LHN-Vo-DMN"/>
-                                <constraint firstItem="MIP-jJ-eq3" firstAttribute="top" secondItem="Jn3-YL-xNQ" secondAttribute="top" id="bTH-LY-vEg"/>
+                                <constraint firstAttribute="bottom" secondItem="T9G-I0-fq4" secondAttribute="bottom" constant="5" id="8is-2F-1FS"/>
+                                <constraint firstItem="T9G-I0-fq4" firstAttribute="top" secondItem="Jn3-YL-xNQ" secondAttribute="top" constant="5" id="lli-c9-WXB"/>
+                                <constraint firstItem="T9G-I0-fq4" firstAttribute="leading" secondItem="Jn3-YL-xNQ" secondAttribute="leading" constant="5" id="nvW-IQ-XVA"/>
+                                <constraint firstAttribute="trailing" secondItem="T9G-I0-fq4" secondAttribute="trailing" constant="5" id="p3O-5I-gxF"/>
                             </constraints>
                             <connections>
-                                <outlet property="button" destination="MIP-jJ-eq3" id="iHr-rG-tTW"/>
+                                <outlet property="label" destination="T9G-I0-fq4" id="UKC-7u-E1w"/>
                             </connections>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="sNw-Qu-z1d">
@@ -198,6 +192,9 @@
         <image name="pin" width="10" height="14.333333015441895"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
