@@ -298,8 +298,6 @@
 				5FF187202B152B80001F4CE8 /* FeedItemsMapper.swift */,
 				5F5558B22D340A6D003BBA52 /* RemoteImageCommentsLoader.swift */,
 				5F5558B42D3468E7003BBA52 /* ImageCommentsMapper.swift */,
-				5FF1871E2B152AA9001F4CE8 /* HTTPClient.swift */,
-				5FF79E5F2B19F4A80071DAD3 /* URLSessionHTTPClient.swift */,
 				F179D1412B3337570074290B /* RemoteFeedItem.swift */,
 				5F7F43E32C8E00D800C3DC6A /* RemoteFeedImageDataLoader.swift */,
 			);
@@ -426,6 +424,47 @@
 			path = "Image Comments Feature";
 			sourceTree = "<group>";
 		};
+		5FCF18AE2D3A7CE800CF6513 /* Shared API */ = {
+			isa = PBXGroup;
+			children = (
+				5FF1871E2B152AA9001F4CE8 /* HTTPClient.swift */,
+			);
+			path = "Shared API";
+			sourceTree = "<group>";
+		};
+		5FCF18AF2D3A7D2B00CF6513 /* Shared API Infra */ = {
+			isa = PBXGroup;
+			children = (
+				5FF79E5F2B19F4A80071DAD3 /* URLSessionHTTPClient.swift */,
+			);
+			path = "Shared API Infra";
+			sourceTree = "<group>";
+		};
+		5FCF18B02D3A7D6100CF6513 /* Shared API */ = {
+			isa = PBXGroup;
+			children = (
+				5FCF18B12D3A7E8F00CF6513 /* Helpers */,
+			);
+			path = "Shared API";
+			sourceTree = "<group>";
+		};
+		5FCF18B12D3A7E8F00CF6513 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5F7F43E12C8DFF7700C3DC6A /* HTTPClientSpy.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5FCF18B22D3A7F4900CF6513 /* Shared API Infra */ = {
+			isa = PBXGroup;
+			children = (
+				5F7254A32C99ED87002E8961 /* Helpers */,
+				5FF79E5A2B17F36E0071DAD3 /* URLSessionHTTPClientTests.swift */,
+			);
+			path = "Shared API Infra";
+			sourceTree = "<group>";
+		};
 		5FDCFF0C2B2F41870085079C /* Feed Cache */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,10 +487,8 @@
 		5FF187222B153325001F4CE8 /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
-				5F7254A32C99ED87002E8961 /* Helpers */,
 				F13AE36B2AB7601F001D2EEB /* LoadFeedFromRemoteUseCaseTests.swift */,
 				5F5558B02D340822003BBA52 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
-				5FF79E5A2B17F36E0071DAD3 /* URLSessionHTTPClientTests.swift */,
 				5F6E80E22C88C57700E1CAA1 /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
 			);
 			path = "Feed API";
@@ -462,7 +499,6 @@
 			children = (
 				5FF79E5D2B19DAAE0071DAD3 /* XCTestCase+MemoryLeakTracking.swift */,
 				F1146DBA2B3840C20065835F /* SharedTestHelpers.swift */,
-				5F7F43E12C8DFF7700C3DC6A /* HTTPClientSpy.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -471,10 +507,6 @@
 			isa = PBXGroup;
 			children = (
 				5F6E80E12C88C31000E1CAA1 /* README.md */,
-				F13D227C2B82BA50002AE390 /* EssentialFeediOS.xctestplan */,
-				F13D22612B82B5A2002AE390 /* EssentialFeedAPIEndtoEndTests.xctestplan */,
-				F1F44B3A2B4C166F005BD43D /* EssentialFeedCacheIntegrationTests.xctestplan */,
-				5FBC52052B220A1B00C1ED1D /* CITestPlan.xctestplan */,
 				F13AE35E2AB7601E001D2EEB /* EssentialFeed */,
 				F13AE36A2AB7601E001D2EEB /* EssentialFeedTests */,
 				5FA5D7992B2204630049A06F /* EssentialFeedAPIEndtoEndTests */,
@@ -483,6 +515,10 @@
 				F13D22722B82B9B9002AE390 /* EssentialFeediOSTests */,
 				F13AE35D2AB7601E001D2EEB /* Products */,
 				F1D237882B83E01B00578FD7 /* Frameworks */,
+				F13D227C2B82BA50002AE390 /* EssentialFeediOS.xctestplan */,
+				F13D22612B82B5A2002AE390 /* EssentialFeedAPIEndtoEndTests.xctestplan */,
+				F1F44B3A2B4C166F005BD43D /* EssentialFeedCacheIntegrationTests.xctestplan */,
+				5FBC52052B220A1B00C1ED1D /* CITestPlan.xctestplan */,
 			);
 			sourceTree = "<group>";
 		};
@@ -502,10 +538,12 @@
 		F13AE35E2AB7601E001D2EEB /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				5FCF18AE2D3A7CE800CF6513 /* Shared API */,
+				5FCF18AF2D3A7D2B00CF6513 /* Shared API Infra */,
 				5FAF26F32D35063E007887F3 /* Image Comments Feature */,
-				5F276A402B31F50D00ADD224 /* Feed Cache */,
 				F161812D2AB7623C00EE62A6 /* Feed Feature */,
 				04C763BF2AE9C26300676BC9 /* Feed API */,
+				5F276A402B31F50D00ADD224 /* Feed Cache */,
 				5F4602A12C67ACE300BE6DF7 /* Feed Presentation */,
 			);
 			path = EssentialFeed;
@@ -515,8 +553,10 @@
 			isa = PBXGroup;
 			children = (
 				5FF79E5C2B19DA8E0071DAD3 /* Helpers */,
-				5FDCFF0C2B2F41870085079C /* Feed Cache */,
+				5FCF18B02D3A7D6100CF6513 /* Shared API */,
+				5FCF18B22D3A7F4900CF6513 /* Shared API Infra */,
 				5FF187222B153325001F4CE8 /* Feed API */,
+				5FDCFF0C2B2F41870085079C /* Feed Cache */,
 				5F4602972C6792C100BE6DF7 /* Feed Presentation */,
 			);
 			path = EssentialFeedTests;
