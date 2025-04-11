@@ -18,7 +18,7 @@
 		5F751B582CBD601A00CD63BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F751B572CBD601A00CD63BA /* ViewController.swift */; };
 		5F751B5D2CBD601C00CD63BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F751B5C2CBD601C00CD63BA /* Assets.xcassets */; };
 		5F751B602CBD601C00CD63BA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5F751B5F2CBD601C00CD63BA /* Base */; };
-		5F7638BD2D0DC0F900FC6554 /* FeedLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7638BB2D0DC0F900FC6554 /* FeedLoaderPresentationAdapter.swift */; };
+		5F7638BD2D0DC0F900FC6554 /* LoadResourcePresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7638BB2D0DC0F900FC6554 /* LoadResourcePresentationAdapter.swift */; };
 		5F7638BE2D0DC0F900FC6554 /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7638B72D0DC0F900FC6554 /* FeedUIComposer.swift */; };
 		5F7638BF2D0DC0F900FC6554 /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7638B62D0DC0F800FC6554 /* FeedViewAdapter.swift */; };
 		5F7638C02D0DC0F900FC6554 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7638B82D0DC0F900FC6554 /* FeedImageDataLoaderPresentationAdapter.swift */; };
@@ -98,7 +98,7 @@
 		5F7638B72D0DC0F900FC6554 /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
 		5F7638B82D0DC0F900FC6554 /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		5F7638BA2D0DC0F900FC6554 /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
-		5F7638BB2D0DC0F900FC6554 /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
+		5F7638BB2D0DC0F900FC6554 /* LoadResourcePresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresentationAdapter.swift; sourceTree = "<group>"; };
 		5F7638C22D0DC50500FC6554 /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		5F7638C42D0DC56B00FC6554 /* FeedUIIntegrationTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+Localization.swift"; sourceTree = "<group>"; };
 		5F7638C62D0DC62C00FC6554 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 				5F7638B72D0DC0F900FC6554 /* FeedUIComposer.swift */,
 				5F7638BA2D0DC0F900FC6554 /* WeakRefVirtualProxy.swift */,
 				5F7638B82D0DC0F900FC6554 /* FeedImageDataLoaderPresentationAdapter.swift */,
-				5F7638BB2D0DC0F900FC6554 /* FeedLoaderPresentationAdapter.swift */,
+				5F7638BB2D0DC0F900FC6554 /* LoadResourcePresentationAdapter.swift */,
 				5F7638B62D0DC0F800FC6554 /* FeedViewAdapter.swift */,
 				5F751B572CBD601A00CD63BA /* ViewController.swift */,
 				5F751B5C2CBD601C00CD63BA /* Assets.xcassets */,
@@ -330,7 +330,7 @@
 				5FEF99BE2D2AD9640072BC3C /* CombineHelpers.swift in Sources */,
 				5F751B542CBD601A00CD63BA /* AppDelegate.swift in Sources */,
 				5F7638BF2D0DC0F900FC6554 /* FeedViewAdapter.swift in Sources */,
-				5F7638BD2D0DC0F900FC6554 /* FeedLoaderPresentationAdapter.swift in Sources */,
+				5F7638BD2D0DC0F900FC6554 /* LoadResourcePresentationAdapter.swift in Sources */,
 				5F751B562CBD601A00CD63BA /* SceneDelegate.swift in Sources */,
 				5F7638BE2D0DC0F900FC6554 /* FeedUIComposer.swift in Sources */,
 				5F7638C12D0DC0F900FC6554 /* WeakRefVirtualProxy.swift in Sources */,
