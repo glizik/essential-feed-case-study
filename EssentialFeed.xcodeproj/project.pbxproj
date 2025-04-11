@@ -87,6 +87,7 @@
 		F18093442DA9074E0083B46E /* SharedLocalizationTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18093402DA907350083B46E /* SharedLocalizationTestHelpers.swift */; };
 		F18093462DA909F50083B46E /* ResourceLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18093452DA909F40083B46E /* ResourceLoadingView.swift */; };
 		F18093482DA90B440083B46E /* ResourceErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18093472DA90B420083B46E /* ResourceErrorView.swift */; };
+		F180934A2DA91CD10083B46E /* FeedImagePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18093492DA91CC20083B46E /* FeedImagePresenterTests.swift */; };
 		F1B00A1D2B4C2F7600D77860 /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1146DB82B35E42E0065835F /* FeedCacheTestHelpers.swift */; };
 		F1B00A1E2B4C2FA500D77860 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1146DBA2B3840C20065835F /* SharedTestHelpers.swift */; };
 		F1BC50772D9D1E9200E9D62E /* FeedImageDataMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BC50762D9D1E8800E9D62E /* FeedImageDataMapperTests.swift */; };
@@ -240,6 +241,7 @@
 		F18093402DA907350083B46E /* SharedLocalizationTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTestHelpers.swift; sourceTree = "<group>"; };
 		F18093452DA909F40083B46E /* ResourceLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoadingView.swift; sourceTree = "<group>"; };
 		F18093472DA90B420083B46E /* ResourceErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceErrorView.swift; sourceTree = "<group>"; };
+		F18093492DA91CC20083B46E /* FeedImagePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenterTests.swift; sourceTree = "<group>"; };
 		F1BC50762D9D1E8800E9D62E /* FeedImageDataMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataMapperTests.swift; sourceTree = "<group>"; };
 		F1BC50782D9D1FB500E9D62E /* FeedImageDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataMapper.swift; sourceTree = "<group>"; };
 		F1F44B0A2B45CFE7005BD43D /* FeedStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore.xcdatamodel; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 		5F4602972C6792C100BE6DF7 /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F18093492DA91CC20083B46E /* FeedImagePresenterTests.swift */,
 				5F4602982C6792F400BE6DF7 /* FeedPresenterTests.swift */,
 				5FD072D32C592510006B5162 /* FeedLocalizationTests.swift */,
 			);
@@ -967,6 +970,7 @@
 				F13AE36C2AB7601F001D2EEB /* FeedItemsMapperTests.swift in Sources */,
 				5FF79E5B2B17F36E0071DAD3 /* URLSessionHTTPClientTests.swift in Sources */,
 				5FA5F51D2C9EEA59007FEA16 /* CacheFeedImageDataUseCaseTests.swift in Sources */,
+				F180934A2DA91CD10083B46E /* FeedImagePresenterTests.swift in Sources */,
 				5F4602AD2C6903A700BE6DF7 /* FeedLocalizationTests.swift in Sources */,
 				F179D15F2B3345B20074290B /* FeedStoreSpy.swift in Sources */,
 				5FDCFF0E2B2F41BE0085079C /* CacheFeedUseCaseTests.swift in Sources */,
@@ -1086,7 +1090,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DP8UX4Z6VQ;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
@@ -1106,7 +1110,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DP8UX4Z6VQ;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
@@ -1326,7 +1330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = DP8UX4Z6VQ;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = TestPackage.EssentialFeedTests;
@@ -1343,7 +1347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = DP8UX4Z6VQ;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = TestPackage.EssentialFeedTests;
