@@ -120,6 +120,19 @@ final class FeedUIIntegrationTests: XCTestCase {
         XCTAssertEqual(sut.errorView.message, nil)
     }
 
+    func test_tapOnErrorView_hidesErrorMessage() {
+        let (sut, loader) = makeSUT()
+
+        sut.simulateAppearance()
+        XCTAssertEqual(sut.errorView.message, nil)
+
+        loader.completeFeedLoadingWithError(at: 0)
+        XCTAssertEqual(sut.errorView.message, loadError)
+
+        sut.simulateErrorViewTap()
+        XCTAssertEqual(sut.errorView.message, nil)
+    }
+
     func test_feedImageView_loadsImageURLWhenVisible() {
         let image0 = makeImage(url: URL(string: "http://url-0.com")!)
         let image1 = makeImage(url: URL(string: "http://url-1.com")!)

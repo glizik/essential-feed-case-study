@@ -13,7 +13,7 @@ final public class ListViewController:
     UITableViewDataSourcePrefetching,
     ResourceLoadingView,
     ResourceErrorView {
-    @IBOutlet private(set) public var errorView: ErrorView!
+    private(set) public var errorView = ErrorView()
     
     public var onRefresh: (() -> Void)?
 
@@ -27,13 +27,36 @@ final public class ListViewController:
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        configureErrorView()
         onViewIsAppearing = { [weak self] vc in
             self?.refresh()
             vc.onViewIsAppearing = nil
         }
     }
-    
+
+    private func configureErrorView() {
+        let container = UIView()
+        container.backgroundColor = .clear
+        container.addSubview(errorView)
+
+        errorView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            errorView.topAnchor.constraint(equalTo: container.topAnchor),
+            container.bottomAnchor.constraint(equalTo: errorView.bottomAnchor),
+            errorView.leadingAnchor.constraint(equalTo: container.leadingAnchor),
+            container.trailingAnchor.constraint(equalTo: errorView.trailingAnchor)
+        ])
+
+        tableView.tableHeaderView = container
+
+        errorView.onHide = { [weak self] in
+            self?.tableView.beginUpdates()
+            self?.tableView.sizeTableHeaderToFit()
+            self?.tableView.endUpdates()
+        }
+    }
+
     public override func viewIsAppearing(_ animated: Bool) {
         super.viewIsAppearing(animated)
         
@@ -60,11 +83,7 @@ final public class ListViewController:
     }
     
     public func display(_ viewModel: ResourceErrorViewModel) {
-        if let message = viewModel.message {
-            errorView.show(message: message)
-        } else {
-            errorView.hideMessage()
-        }
+        errorView.message = viewModel.message
     }
     
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
