@@ -7,10 +7,9 @@
 
 import UIKit
 
-@objc
 public final class ErrorView: UIButton {
     public var message: String? {
-        get { return isVisible ? title(for: .normal) : nil }
+        get { return isVisible ? configuration?.title : nil }
         set { setMessageAnimated(newValue) }
     }
 
@@ -25,20 +24,46 @@ public final class ErrorView: UIButton {
         super.init(coder: coder)
     }
 
-    private func configure() {
-        backgroundColor = .errorBackgroundColor
+    public override var intrinsicContentSize: CGSize {
+        guard
+            let size = titleLabel?.intrinsicContentSize,
+            let insets = configuration?.contentInsets
+        else {
+            return super.intrinsicContentSize
+        }
 
-        addTarget(self, action: #selector(hideMessageAnimated), for: .touchUpInside)
-        configureLabel()
-        hideMessage()
+        return CGSize(width: size.width + insets.leading + insets.trailing, height: size.height + insets.top + insets.bottom)
     }
 
-    private func configureLabel() {
-        titleLabel?.textColor = .white
-        titleLabel?.textAlignment = .center
-        titleLabel?.numberOfLines = 0
-        titleLabel?.font = .preferredFont(forTextStyle: .body)
-        titleLabel?.adjustsFontSizeToFitWidth = true
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+
+        if let insets = configuration?.contentInsets {
+            titleLabel?.preferredMaxLayoutWidth = bounds.size.width - insets.leading - insets.trailing
+        }
+    }
+
+    private var titleAttributes: AttributeContainer {
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = NSTextAlignment.center
+
+        return AttributeContainer([
+            .paragraphStyle: paragraphStyle,
+            .font: UIFont.preferredFont(forTextStyle: .body)
+        ])
+    }
+
+    private func configure() {
+        var configuration = Configuration.plain()
+        configuration.titlePadding = 0
+        configuration.baseForegroundColor = .white
+        configuration.background.backgroundColor = .errorBackgroundColor
+        configuration.background.cornerRadius = 0
+        self.configuration = configuration
+
+        addTarget(self, action: #selector(hideMessageAnimated), for: .touchUpInside)
+
+        hideMessage()
     }
 
     private var isVisible: Bool {
@@ -47,15 +72,16 @@ public final class ErrorView: UIButton {
 
     private func setMessageAnimated(_ message: String?) {
         if let message {
-            showAnimated(message: message)
+            showAnimated(message)
         } else {
             hideMessageAnimated()
         }
     }
 
-    private func showAnimated(message: String) {
-        setTitle(message, for: .normal)
-        contentEdgeInsets = .init(top: 8, left: 8, bottom: 8, right: 8)
+    private func showAnimated(_ message: String) {
+        configuration?.attributedTitle = AttributedString(message, attributes: titleAttributes)
+
+        configuration?.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
 
         UIView.animate(withDuration: 0.25) {
             self.alpha = 1
@@ -67,22 +93,20 @@ public final class ErrorView: UIButton {
             withDuration: 0.25,
             animations: { self.alpha = 0 },
             completion: { completed in
-                if completed {
-                    self.hideMessage()
-                }
+                if completed { self.hideMessage() }
             })
     }
 
     private func hideMessage() {
-        setTitle(nil, for: .normal)
         alpha = 0
-        configuration?.contentInsets = .init(top: -2.5, leading: 0, bottom: -2.5, trailing: 0)
+        configuration?.attributedTitle = nil
+        configuration?.contentInsets = .zero
         onHide?()
     }
 }
 
 extension UIColor {
     static var errorBackgroundColor: UIColor {
-        UIColor(red: 0.99951404330000004, green: 0.41759261489999999, blue: 0.41544330120000003, alpha: 1)
+        UIColor(red: 0.99951404330000004, green: 0.41759261489999999, blue: 0.4154433012, alpha: 1)
     }
 }
