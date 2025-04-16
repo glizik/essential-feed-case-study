@@ -56,6 +56,7 @@ extension ListViewController {
     }
     
     func numberOfRenderedFeedImageViews() -> Int {
+        tableView.numberOfSections == 0 ? 0 :
         tableView.numberOfRows(inSection: feedImageSection)
     }
     
@@ -102,7 +103,7 @@ extension ListViewController {
     }
 
     private func setSmallFrameToPreventRenderingCells() {
-        tableView.frame = CGRect(x: 0, y: 0, width: 390, height: 1)
+        tableView.frame = CGRect(x: 0, y: 0, width: 1, height: 1)
     }
     
     private class FakeUIRefreshControl: UIRefreshControl {
