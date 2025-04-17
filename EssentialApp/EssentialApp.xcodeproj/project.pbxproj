@@ -175,11 +175,11 @@
 		5F751B522CBD601A00CD63BA /* EssentialApp */ = {
 			isa = PBXGroup;
 			children = (
-				F1372E422DB0D7BF002078BB /* CommentsUIComposer.swift */,
 				5F751B532CBD601A00CD63BA /* AppDelegate.swift */,
 				5F751B552CBD601A00CD63BA /* SceneDelegate.swift */,
 				5FEF99BD2D2AD9640072BC3C /* CombineHelpers.swift */,
 				5F7638B72D0DC0F900FC6554 /* FeedUIComposer.swift */,
+				F1372E422DB0D7BF002078BB /* CommentsUIComposer.swift */,
 				5F7638BA2D0DC0F900FC6554 /* WeakRefVirtualProxy.swift */,
 				5F7638BB2D0DC0F900FC6554 /* LoadResourcePresentationAdapter.swift */,
 				5F7638B62D0DC0F800FC6554 /* FeedViewAdapter.swift */,
