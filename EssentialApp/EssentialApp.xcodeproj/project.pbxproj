@@ -31,7 +31,7 @@
 		5F7638CF2D0DC72900FC6554 /* FeedImageCell+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7638CE2D0DC72900FC6554 /* FeedImageCell+TestHelpers.swift */; };
 		5F7638D12D0DC74C00FC6554 /* FeedUIIntegrationTests+LoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7638D02D0DC74C00FC6554 /* FeedUIIntegrationTests+LoaderSpy.swift */; };
 		5F7638D32D0DC75F00FC6554 /* FeedUIIntegrationTests+Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7638D22D0DC75F00FC6554 /* FeedUIIntegrationTests+Assertions.swift */; };
-		5F7638D72D0DCB9A00FC6554 /* FeedViewContoller+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7638D62D0DCB9A00FC6554 /* FeedViewContoller+TestHelpers.swift */; };
+		5F7638D72D0DCB9A00FC6554 /* ListViewController+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7638D62D0DCB9A00FC6554 /* ListViewController+TestHelpers.swift */; };
 		5F7638D92D0DCFCD00FC6554 /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7638D82D0DCFCD00FC6554 /* FeedAcceptanceTests.swift */; };
 		5F7638DB2D0F1A5800FC6554 /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7638DA2D0F1A5800FC6554 /* HTTPClientStub.swift */; };
 		5F7638DD2D0F1B3700FC6554 /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7638DC2D0F1B3700FC6554 /* InMemoryFeedStore.swift */; };
@@ -106,7 +106,7 @@
 		5F7638CE2D0DC72900FC6554 /* FeedImageCell+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageCell+TestHelpers.swift"; sourceTree = "<group>"; };
 		5F7638D02D0DC74C00FC6554 /* FeedUIIntegrationTests+LoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+LoaderSpy.swift"; sourceTree = "<group>"; };
 		5F7638D22D0DC75F00FC6554 /* FeedUIIntegrationTests+Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+Assertions.swift"; sourceTree = "<group>"; };
-		5F7638D62D0DCB9A00FC6554 /* FeedViewContoller+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewContoller+TestHelpers.swift"; sourceTree = "<group>"; };
+		5F7638D62D0DCB9A00FC6554 /* ListViewController+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController+TestHelpers.swift"; sourceTree = "<group>"; };
 		5F7638D82D0DCFCD00FC6554 /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		5F7638DA2D0F1A5800FC6554 /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
 		5F7638DC2D0F1B3700FC6554 /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 				5F7638C42D0DC56B00FC6554 /* FeedUIIntegrationTests+Localization.swift */,
 				5F7638D02D0DC74C00FC6554 /* FeedUIIntegrationTests+LoaderSpy.swift */,
 				5F7638D22D0DC75F00FC6554 /* FeedUIIntegrationTests+Assertions.swift */,
-				5F7638D62D0DCB9A00FC6554 /* FeedViewContoller+TestHelpers.swift */,
+				5F7638D62D0DCB9A00FC6554 /* ListViewController+TestHelpers.swift */,
 				5FB33A8A2CDE69CF0014D9AE /* XCTestCase+MemoryLeakTracking.swift */,
 				5FB33AA32CE38E060014D9AE /* XCTestCase+FeedImageDataLoader.swift */,
 				5FB33A8D2CDE77B30014D9AE /* SharedTestHelpers.swift */,
@@ -338,7 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F7638C52D0DC56B00FC6554 /* FeedUIIntegrationTests+Localization.swift in Sources */,
-				5F7638D72D0DCB9A00FC6554 /* FeedViewContoller+TestHelpers.swift in Sources */,
+				5F7638D72D0DCB9A00FC6554 /* ListViewController+TestHelpers.swift in Sources */,
 				5F7638D92D0DCFCD00FC6554 /* FeedAcceptanceTests.swift in Sources */,
 				5F7638D12D0DC74C00FC6554 /* FeedUIIntegrationTests+LoaderSpy.swift in Sources */,
 				5F7638C72D0DC62C00FC6554 /* UIImage+TestHelpers.swift in Sources */,

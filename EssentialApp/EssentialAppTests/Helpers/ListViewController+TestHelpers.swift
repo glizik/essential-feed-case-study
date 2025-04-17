@@ -1,5 +1,5 @@
 //
-//  FeedViewContoller+TestHelpers.swift
+//  ListViewController+TestHelpers.swift
 //  EssentialAppTests
 //
 //  Created by Gabor L Lizik on 2024. 12. 14..
@@ -12,7 +12,19 @@ extension ListViewController {
     func simulateUserInitiatedFeedReload() {
         refreshControl?.simulatePullToRefresh()
     }
-    
+
+    var isShowingLoadingIndicator: Bool {
+        refreshControl?.isRefreshing == true
+    }
+
+    func simulateErrorViewTap() {
+        errorView.simulateTap()
+    }
+
+    var errorMessage: String? {
+        errorView.message
+    }
+
     @discardableResult
     func simulateFeedImageViewVisible(at index: Int) -> FeedImageCell? {
         return feedImageView(at: index) as? FeedImageCell
@@ -47,14 +59,6 @@ extension ListViewController {
         simulateFeedImageViewVisible(at: index)?.renderedImage
     }
 
-    func simulateErrorViewTap() {
-        errorView.simulateTap()
-    }
-
-    var isShowingLoadingIndicator: Bool {
-        refreshControl?.isRefreshing == true
-    }
-    
     func numberOfRenderedFeedImageViews() -> Int {
         tableView.numberOfSections == 0 ? 0 :
         tableView.numberOfRows(inSection: feedImageSection)
